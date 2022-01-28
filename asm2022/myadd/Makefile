@@ -5,4 +5,4 @@ myadd: myadd.S
 	gcc -no-pie myadd.o myadd.c -o myadd
 
 clean:
-	rm *.o 
+	rm *.o myadd

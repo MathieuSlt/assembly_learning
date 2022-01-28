@@ -1,8 +1,8 @@
-all: fibonnacci
+all: fibonnaci
 
-fibonnacci: fibonnacci.S
-	nasm -f elf64 fibonnacci.S
-	gcc -no-pie fibonnacci.o fibonnacci.c -o fibonnacci
+fibonnaci: fibonnaci.S
+	nasm -f elf64 fibonnaci.S
+	gcc -no-pie fibonnaci.o fibonnaci.c -o fibonnaci
 
 clean:
-	rm *.o 
+	rm *.o fibonnaci

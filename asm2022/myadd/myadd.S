@@ -1,8 +1,6 @@
 global myadd
 
 myadd:
-  mov rdi, 3
-  mov rsi, 6
-  add rax, rdi
+  mov rax, rdi
   add rax, rsi
   ret
