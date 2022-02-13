@@ -5,4 +5,4 @@ myfilexor: myfilexor.S
 	gcc -no-pie myfilexor.o myfilexor.c -o myfilexor
 
 clean:
-	rm *.o 
+	rm *.o myfilexor
