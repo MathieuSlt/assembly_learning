@@ -1,16 +1,13 @@
 global mymul
 
-section .text
-
-; rdi 1st arg, rsi 2nd, rdx 3rd
 mymul:
-
-    mov rax, rdi
-    mul rsi
-
     push rdx
-
-    mov [rdx], rax ;rdx represent the struct
-
+    mov rax, rdi
+    mov rcx, rsi
+    mul rcx
+    mov r8, rdx ; higher
+    mov r9, rax ; lower
     pop rdx
+    mov qword [rdx], r8
+    mov qword [rdx+8], r9
     ret

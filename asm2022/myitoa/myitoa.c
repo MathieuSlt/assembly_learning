@@ -2,12 +2,11 @@
 
 long long myitoa(char *s);
 
-int main() {
-
+int main()
+{
     printf("myitoa(\"5\")=%lli\n", myitoa("5")); // 5
+    printf("myitoa(\"25\")=%lli\n", myitoa("25")); // 25
+
     printf("myitoa(\"-5\")=%lli\n", myitoa("-5")); // -5
     printf("myitoa(\"-18\")=%lli\n", myitoa("-18")); // -18
-
 }
-
-

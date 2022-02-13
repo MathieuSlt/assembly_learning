@@ -5,4 +5,4 @@ myitoa: myitoa.S
 	gcc -no-pie myitoa.o myitoa.c -o myitoa
 
 clean:
-	rm *.o 
+	rm *.o myitoa
